@@ -1,0 +1,44 @@
+@import '../../styles/variables.scss';
+
+.header {
+  &_container {
+    margin: 0 91px 55px;
+    padding-top: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &_list {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-between;
+    gap: 89px;
+
+    &_element {
+      color: black;
+    }
+  }
+
+  &_logo {
+    margin-right: 89px;
+  }
+
+  &_buy {
+    padding: 28px 25px;
+    background-color: $background-orange-color;
+    border-radius: 50%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 34px;
+    font-weight: 700;
+    color: $white-color;
+    transform: rotate(15deg);
+
+    &:hover {
+      transform: rotate(375deg);
+      transition: transform $transition-duration ease;
+    }
+  }
+}

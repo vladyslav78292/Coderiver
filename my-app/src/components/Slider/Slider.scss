@@ -1,0 +1,93 @@
+@import '../../styles/variables.scss';
+
+.slider {
+  &_head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &_title {
+    font-weight: 800;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 70px;
+    margin: 76px 0;
+    transform: translateX(405px);
+  }
+
+  &_cards {
+    margin: 0 0 64px;
+    display: flex;
+    gap: 32px;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  &_card {
+    transition: transform $transition-duration ease;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    color: inherit;
+    font: inherit;
+    text-align: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+  }
+
+  &_card_img {
+    width: 268px;
+    height: 330px;
+
+  }
+
+  &_buttons {
+    gap: 16px;
+    display: flex;
+    justify-content: space-between;
+    height: 0;
+  }
+
+  &_button {
+    z-index: 1;
+    display: block;
+    width: 76px;
+    height: 76px;
+    cursor: pointer;
+    border: 1px solid #e2e6e9;
+    border-radius: 50%;
+
+    &:hover {
+      border: 1px solid #0f0f11;
+      color: #0f0f11;
+    }
+
+    &:disabled {
+      cursor: auto;
+      opacity: 50%;
+      border: 0;
+    }
+  }
+
+  &_button1 {
+    position: relative;
+    top: 245px;
+    left: 104px;
+  }
+
+  &_button2 {
+    position: relative;
+    top: 245px;
+    right: 1110px;
+  }
+}
+
+.button_arrow {
+  height: 29px;
+  width: 16px;
+}

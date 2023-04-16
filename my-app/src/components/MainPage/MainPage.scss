@@ -1,0 +1,19 @@
+@import '../../styles/variables.scss';
+
+.main_page {
+  &_container {
+    margin: 101px 0 224px 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $background-light-grey;
+    width: 1350px;
+    padding-bottom: 159px;
+  }
+}
+
+.test {
+  background-color: $white-color;
+  width: 1168px;
+  margin: 0 auto;
+}
