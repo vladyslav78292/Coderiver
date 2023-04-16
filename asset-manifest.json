@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Coderiver/static/css/main.2de55d5b.css",
-    "main.js": "/Coderiver/static/js/main.fba677c7.js",
+    "main.js": "/Coderiver/static/js/main.c039fd64.js",
     "static/js/787.017682e8.chunk.js": "/Coderiver/static/js/787.017682e8.chunk.js",
     "static/media/FREEFATFONT-Regular.ttf": "/Coderiver/static/media/FREEFATFONT-Regular.05883bd1ba97fdca66bc.ttf",
     "index.html": "/Coderiver/index.html",
     "main.2de55d5b.css.map": "/Coderiver/static/css/main.2de55d5b.css.map",
-    "main.fba677c7.js.map": "/Coderiver/static/js/main.fba677c7.js.map",
+    "main.c039fd64.js.map": "/Coderiver/static/js/main.c039fd64.js.map",
     "787.017682e8.chunk.js.map": "/Coderiver/static/js/787.017682e8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2de55d5b.css",
-    "static/js/main.fba677c7.js"
+    "static/js/main.c039fd64.js"
   ]
 }
