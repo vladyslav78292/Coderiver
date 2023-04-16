@@ -11,7 +11,7 @@ export const Header = () => {
           to={'/'}
         >
           <img
-            src="../../../LANDING.png"
+            src="../../../../images/LANDING.png"
             alt='Langing page logo'
             className='header_logo_image'
           />
