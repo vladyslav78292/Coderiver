@@ -1,6 +1,7 @@
 {
-  "name": "my-app",
+  "name": "coderiver-test",
   "version": "0.1.0",
+  "homepage": "https://vladyslav78292.github.io/Coderiver",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -18,7 +19,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -44,6 +47,7 @@
     "@typescript-eslint/parser": "^5.58.0",
     "eslint-import-resolver-typescript": "^3.5.5",
     "eslint-plugin-react": "^7.32.2",
+    "gh-pages": "^5.0.0",
     "typescript": "^5.0.4"
   }
 }
