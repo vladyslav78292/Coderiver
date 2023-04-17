@@ -4,33 +4,30 @@
 .slider {
   &_head {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-  }
-
-  &_title {
-    font-weight: 800;
-    font-size: 22px;
-    text-transform: uppercase;
     font-weight: 500;
     font-size: 60px;
     line-height: 70px;
+    padding-top: 76px;
     margin: 76px 0;
-    transform: translateX(405px);
+    text-transform: uppercase;
 
-    @include onTablet {
-      transform: translateX(255px);
-    }
+    &_container {
+      box-shadow: 0 0 0 $color-grey;
+      transition: all $transition-duration ease-in-out;
+      letter-spacing: 0;
 
-    @include onSmallerTablet {
-      transform: translateX(105px);
+      &:hover {
+        letter-spacing: 4px;
+        box-shadow: 0 4px 0 $color-grey;
+      }
     }
 
     @include onMobile {
-      font-size: 45px;
-      line-height: 50px;
+      margin: 60px 0;
+      padding-top: 60px;
       text-align: center;
-      transform: translateX(60px);
     }
   }
 
@@ -58,7 +55,14 @@
   &_card_img {
     width: 268px;
     height: 330px;
+    transition: all $transition-duration linear;
 
+    &:hover {
+      padding: 3px;
+      border-radius: 20px;
+      background-color: $color-mediumseagreen;
+      z-index: 100;
+    }
   }
 
   &_buttons {
@@ -91,22 +95,27 @@
 
   &_button_right {
     position: relative;
-    top: 245px;
-    left: 104px;
+    top: 145px;
+    left: 1102px;
 
     @include onTablet {
       bottom: 200px;
+      left: 802px;
+    }
+
+    @include onSmallerTablet {
+      left: 504px;
     }
 
     @include onMobile {
-      left: 135px;
+      left: 343px;
     }
   }
 
   &_button_left {
     position: relative;
-    top: 245px;
-    right: 1105px;
+    top: 145px;
+    right: 1102px;
 
     @include onTablet {
       right: 803px;
@@ -117,7 +126,7 @@
     }
 
     @include onMobile {
-      right: 320px;
+      right: 345px;
     }
   }
 }

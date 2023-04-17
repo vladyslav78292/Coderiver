@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-undef
 module.exports = {
   parser: '@typescript-eslint/parser',
   extends: [
@@ -13,6 +14,5 @@ module.exports = {
     },
   },
   rules: {
-    // здесь вы можете добавить свои правила для проверки кода
   },
 };

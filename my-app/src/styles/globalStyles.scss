@@ -1,5 +1,6 @@
 @import './variables.scss';
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto&display=swap');
+@import './mixins.scss';
 
 * {
   box-sizing: border-box;
@@ -34,4 +35,26 @@ ul {
 
 body {
   background-color: $background-main-color;
+}
+
+.container {
+  margin: 101px 0 224px 0;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: $background-light-grey;
+  width: 1350px;
+  padding-bottom: 159px;
+
+  @include onTablet {
+    width: 1024px;
+  }
+
+  @include onSmallerTablet {
+    width: 720px;
+  }
+
+  @include onMobile {
+    width: 80%;
+  }
 }

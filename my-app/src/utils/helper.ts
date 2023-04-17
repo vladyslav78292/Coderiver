@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react'
 
+// custom hook which checks window size
+
 export function useWindowSize() {
   const [windowSize, setWindowSize] = useState({
     width: 0,
