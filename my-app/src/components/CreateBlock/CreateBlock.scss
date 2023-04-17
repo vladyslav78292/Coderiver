@@ -1,4 +1,6 @@
 @import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
 @font-face {
   font-family: 'Free Fat Font';
   src: url('../../../public/FREEFATFONT-Regular.ttf');
@@ -13,6 +15,26 @@
     margin: 0 176px 0 91px;
     z-index: 2;
     margin-bottom: 135px;
+
+    @include onTablet {
+      justify-content: center;
+      width: 868px;
+      justify-content: space-around;
+      margin-bottom: 91px;
+    }
+
+    @include onSmallerTablet {
+      flex-direction: column-reverse;
+      margin-top: 150px;
+      margin-left: 80px;
+      width: 568px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @include onMobile {
+      width: 320px;
+    }
   }
 
   &_title {
@@ -20,6 +42,22 @@
     line-height: 105px;
     text-transform: uppercase;
     font-weight: 500;
+
+    @include onTablet {
+      font-size: 50px;
+      line-height: 75px;
+    }
+
+    @include onSmallerTablet {
+      margin-top: 55px;
+      font-size: 91px;
+      line-height: 105px;
+    }
+
+    @include onMobile {
+      font-size: 50px;
+      line-height: 65px;
+    }
 
     &_look {
       display: inline-block;
@@ -34,15 +72,34 @@
 
   &_star {
     position: absolute;
-    top: 720px;
+    top: 710px;
     z-index: 2;
     left: 590px;
+
+    @include onTablet {
+      top: 720px;
+      left: 400px;
+    }
+
+    @include onSmallerTablet {
+      left: 610px;
+      top: 1077px;
+    }
+
+    @include onMobile {
+      top: 810px;
+      left: 375px;
+    }
   }
 
   &_text {
     font-weight: 500;
     font-family: 'Free Fat Font', sans-serif;
     letter-spacing: 1px;
+
+    @include onMobile {
+      width: 320px;
+    }
 
     &_container {
       background-image: inherit;
@@ -55,6 +112,10 @@
       -moz-background-clip: text;
       background-clip: text;
       overflow: visible;
+
+      @include onSmallerTablet {
+        margin-top: 20px;
+      }
 
       &_open {
         transform: scaleX(1);
@@ -74,4 +135,15 @@
   position: absolute;
   left: 91px;
   top: 185px;
+
+  @include onTablet {
+    top: 135px;
+  }
+}
+
+.availible_icon {
+  @include onSmallerTablet {
+    width: 100px;
+    height: 100px;
+  }
 }

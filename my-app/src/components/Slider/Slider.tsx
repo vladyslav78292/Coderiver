@@ -12,7 +12,7 @@ import text_mask_woman from '../../images/text-mask-woman.svg';
 import text_mask_hoodie from '../../images/text-mask-hoodie.svg';
 import text_mask_nature from '../../images/text-mask-nature.svg';
 import text_mask_shoes from '../../images/text-mask-shoes.svg';
-
+import { useWindowSize } from '../../utils/helper';
 type Props = {
   setImage: (image: string) => void,
   setIsImageClicked: (type: boolean) => void,
@@ -20,6 +20,7 @@ type Props = {
 
 export const Slider: React.FC<Props> = ({ setImage, setIsImageClicked }) => {  
   const [position, setPosition] = useState(0);
+  const windowWidth = useWindowSize().width;
   const [timerId, setTimerId] = useState(0);
   
 
@@ -59,6 +60,12 @@ export const Slider: React.FC<Props> = ({ setImage, setIsImageClicked }) => {
     setTimerId(id);
   }
 
+  const disableRightDesktop = (position === -1 && windowWidth >= 1400);
+  const disableRightTablet = (position === -2 && windowWidth < 1400 && windowWidth > 1024);
+  const disableRightSmallTablet = (position === -3 && windowWidth < 1025 && windowWidth > 719);
+  const disableRightMobile = (position === -4 && windowWidth < 720);
+
+
   return (
     <div className='slider'>
       <div className='slider_head'>
@@ -69,7 +76,7 @@ export const Slider: React.FC<Props> = ({ setImage, setIsImageClicked }) => {
             onClick={() => {
               setPosition((position) => position - 1)
             }}
-            disabled={position === -1}
+            disabled={disableRightDesktop || disableRightTablet || disableRightSmallTablet || disableRightMobile}
           >
             <img src={arrowRight} alt="previous button" className='slider_arrow' />
           </button>

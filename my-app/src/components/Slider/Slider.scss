@@ -17,6 +17,21 @@
     line-height: 70px;
     margin: 76px 0;
     transform: translateX(405px);
+
+    @include onTablet {
+      transform: translateX(255px);
+    }
+
+    @include onSmallerTablet {
+      transform: translateX(105px);
+    }
+
+    @include onMobile {
+      font-size: 45px;
+      line-height: 50px;
+      text-align: center;
+      transform: translateX(60px);
+    }
   }
 
   &_cards {
@@ -82,12 +97,28 @@
     @include onTablet {
       bottom: 200px;
     }
+
+    @include onMobile {
+      left: 135px;
+    }
   }
 
   &_button_left {
     position: relative;
-    // top: 245px;
-    right: 510px;
+    top: 245px;
+    right: 1105px;
+
+    @include onTablet {
+      right: 803px;
+    }
+    
+    @include onSmallerTablet {
+      right: 508px;
+    }
+
+    @include onMobile {
+      right: 320px;
+    }
   }
 }
 
