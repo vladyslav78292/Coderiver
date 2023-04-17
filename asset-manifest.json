@@ -1,16 +1,32 @@
 {
   "files": {
-    "main.css": "/Coderiver/static/css/main.2de55d5b.css",
-    "main.js": "/Coderiver/static/js/main.c039fd64.js",
-    "static/js/787.017682e8.chunk.js": "/Coderiver/static/js/787.017682e8.chunk.js",
+    "main.css": "/Coderiver/static/css/main.682f6eac.css",
+    "main.js": "/Coderiver/static/js/main.65e8240c.js",
+    "static/js/787.4a2fcde6.chunk.js": "/Coderiver/static/js/787.4a2fcde6.chunk.js",
+    "static/media/text-mask-hoodie.svg": "/Coderiver/static/media/text-mask-hoodie.ea1a9144dd74127aa86263e416a25bd4.svg",
+    "static/media/text-mask-legs.svg": "/Coderiver/static/media/text-mask-legs.7fa80fa3516151cf665afb86432b94b0.svg",
+    "static/media/text-mask-shoes.svg": "/Coderiver/static/media/text-mask-shoes.753eff20d9c05e5cec57ecd77b932dd6.svg",
+    "static/media/text-mask-nature.svg": "/Coderiver/static/media/text-mask-nature.450f3656c87b6d5fc919d76224f6dbd8.svg",
+    "static/media/text-mask-woman.svg": "/Coderiver/static/media/text-mask-woman.27a31b3497f96dc01492383bef645520.svg",
+    "static/media/woman.png": "/Coderiver/static/media/woman.b15f3db9665359953b31.png",
+    "static/media/nature.png": "/Coderiver/static/media/nature.707c35c370fd99921e7f.png",
+    "static/media/hoodie.png": "/Coderiver/static/media/hoodie.b3c1bc8b21c45019cac7.png",
+    "static/media/legs.png": "/Coderiver/static/media/legs.829753d7b784ab982b6d.png",
+    "static/media/shoes.png": "/Coderiver/static/media/shoes.9c0ebd9cc233f0a8af01.png",
     "static/media/FREEFATFONT-Regular.ttf": "/Coderiver/static/media/FREEFATFONT-Regular.05883bd1ba97fdca66bc.ttf",
+    "static/media/appAvailible.svg": "/Coderiver/static/media/appAvailible.d7d504a0ea753fdddf00750bd8d2a16c.svg",
+    "static/media/LANDING.svg": "/Coderiver/static/media/LANDING.1fa673e72e452ed30ef6a7f4538ffbd5.svg",
     "index.html": "/Coderiver/index.html",
-    "main.2de55d5b.css.map": "/Coderiver/static/css/main.2de55d5b.css.map",
-    "main.c039fd64.js.map": "/Coderiver/static/js/main.c039fd64.js.map",
-    "787.017682e8.chunk.js.map": "/Coderiver/static/js/787.017682e8.chunk.js.map"
+    "static/media/Close.svg": "/Coderiver/static/media/Close.cdfb6ae506fe360c9ad495bfc61f521d.svg",
+    "static/media/burgerMenu.svg": "/Coderiver/static/media/burgerMenu.3f3c3f2fcc2d0b60dfa752fd3c1cab9c.svg",
+    "static/media/arrow_right.svg": "/Coderiver/static/media/arrow_right.0998e6b0ab2905670d14a131b2f7831d.svg",
+    "static/media/arrow_left.svg": "/Coderiver/static/media/arrow_left.2e4a792ff38943f109c08e00baafb948.svg",
+    "main.682f6eac.css.map": "/Coderiver/static/css/main.682f6eac.css.map",
+    "main.65e8240c.js.map": "/Coderiver/static/js/main.65e8240c.js.map",
+    "787.4a2fcde6.chunk.js.map": "/Coderiver/static/js/787.4a2fcde6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2de55d5b.css",
-    "static/js/main.c039fd64.js"
+    "static/css/main.682f6eac.css",
+    "static/js/main.65e8240c.js"
   ]
 }
