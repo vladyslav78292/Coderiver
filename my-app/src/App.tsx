@@ -1,7 +1,7 @@
 import './styles/globalStyles.scss';
 import React from 'react';
 import { MainPage } from './pages/MainPage/MainPage';
-import { Navigate, Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router';
 import { UnderConstruction } from './pages/UnderConstruction';
 import { NotFound } from './pages/NotFound/NotFound';
 
@@ -11,7 +11,7 @@ const App = () => (
   <div className="container">
     <Routes>
       <Route path='/' element={<MainPage />} />
-      <Route path='/Coderiver' element={<Navigate to='/' replace />} />
+      <Route path='/Coderiver' element={<MainPage />} />
       <Route path='/home' element={<Navigate to='/' replace />} />
       <Route path='/clothes' element={ <UnderConstruction />} />
       <Route path='/sneakers' element={ <UnderConstruction />} />
