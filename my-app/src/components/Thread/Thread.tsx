@@ -5,7 +5,7 @@ import anime from 'animejs';
 export const Thread = () => {
   React.useEffect(() => {
     const path = document.querySelector('path');
-
+// anime js library. helped me to animate this blue line
     const animation = anime({
       targets: path,
       strokeDashoffset: [anime.setDashoffset, 0],

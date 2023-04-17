@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import { Thread } from '../Thread/Thread.tsx';
+import { Thread } from '../../components/Thread/Thread.tsx';
 import './MainPage.scss';
-import { Header } from '../Header/Header.tsx';
-import { CreateBlock } from '../CreateBlock/CreateBlock.tsx';
-import { Slider } from '../Slider/Slider.tsx';
-import { AboutSection } from '../AboutSection/AboutSection.tsx';
+import { Header } from '../../components/Header/Header.tsx';
+import { CreateBlock } from '../../components/CreateBlock/CreateBlock.tsx';
+import { Slider } from '../../components/Slider/Slider.tsx';
+import { AboutSection } from '../../components/AboutSection/AboutSection.tsx';
 import text_mask_woman from '../../images/text-mask-woman.svg';
 import { useWindowSize } from '../../utils/helper.ts';
-import { BurgerMenu } from '../BurgerMenu/BurgerMenu.tsx';
+import { BurgerMenu } from '../../components/BurgerMenu/BurgerMenu.tsx';
 
 export const MainPage = () => {
   const [image, setImage] = useState(text_mask_woman);

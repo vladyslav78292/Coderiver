@@ -14,9 +14,9 @@
       padding-top: 61px;
     }
 
-    // @include onSmallerTablet {
-
-    // }
+    @include onMobile {
+      margin: 0 45px 61px;
+    }
   }
 
   &_burger {
@@ -42,6 +42,7 @@
 
     &_element {
       color: black;
+      position: relative;
     }
   }
 
@@ -59,10 +60,10 @@
     font-weight: 700;
     color: $white-color;
     transform: rotate(15deg);
+    transition: all $transition-duration ease;
 
     &:hover {
-      transform: rotate(375deg);
-      transition: transform $transition-duration ease;
+      transform: rotate(375deg) scale(1.1);
     }
   }
 }

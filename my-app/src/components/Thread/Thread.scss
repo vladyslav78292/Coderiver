@@ -9,6 +9,7 @@
     margin-left: auto;
     margin-right: auto;
     position: absolute;
+    width: 100%;
     z-index: 1;
 
     @include onSmallerTablet {
@@ -19,15 +20,7 @@
     width: 1350px;
 
     @include onTablet {
-      width: 1024px;
-    }
-
-    @include onSmallerTablet {
-      width: 720px;
-    }
-
-    @include onMobile {
-      width: 470px;
+      width: 100%;
     }
   }
 };

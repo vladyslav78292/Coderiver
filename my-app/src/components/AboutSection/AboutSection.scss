@@ -1,4 +1,5 @@
 @import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
 
 .about {
   &_title {
@@ -9,13 +10,30 @@
     display: inline-block;
     transform: translateX(391px);
     margin: 60px 0;
+    box-shadow: 0 0 0 $color-grey;
+    transition: all $transition-duration ease-in-out;
+    letter-spacing: 0;
+
+    &:hover {
+      transform: translateX(375px);
+      letter-spacing: 4px;
+      box-shadow: 0 4px 0 $color-grey;
+    }
 
     @include onTablet {
       transform: translateX(255px);
+
+      &:hover {
+        transform: translateX(229px);
+      }
     }
 
     @include onSmallerTablet {
       transform: translateX(95px);
+
+      &:hover {
+        transform: translateX(65px);
+      }
     }
 
     @include onMobile {
@@ -23,6 +41,18 @@
       line-height: 50px;
       text-align: center;
       transform: translateX(0);
+
+      &:hover {
+        transform: translateX(0);
+        letter-spacing: 0;
+      }
+    }
+
+    &_container {
+      @include onMobile {
+        display: flex;
+        justify-content: center;
+      }
     }
   }
 
@@ -31,6 +61,8 @@
     font-weight: 400;
     line-height: 27px;
     font-size: 16px;
+    transition: all 1s ease-in-out;
+
     &_container {
       margin: 0 48px;
     }
@@ -44,4 +76,3 @@
     padding-bottom: 101px;
   }
 }
-

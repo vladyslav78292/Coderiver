@@ -15,6 +15,7 @@
     margin: 0 176px 0 91px;
     z-index: 2;
     margin-bottom: 135px;
+    
 
     @include onTablet {
       justify-content: center;
@@ -34,6 +35,10 @@
 
     @include onMobile {
       width: 320px;
+      margin: 0 auto;
+      margin-top: 150px;
+      margin-bottom: 80px;
+
     }
   }
 
@@ -67,28 +72,33 @@
       transform: rotate(10deg);
       position: relative;
       bottom: 5px;
+      transition: transform $transition-duration ease-in-out;
+
+      &:hover {
+        transform: rotate(0deg);
+      }
     }
   }
 
   &_star {
     position: absolute;
-    top: 710px;
-    z-index: 2;
-    left: 590px;
+    top: 495px;
+    z-index: 30;
+    left: 500px;
 
     @include onTablet {
-      top: 720px;
-      left: 400px;
+      top: 560px;
+      left: 310px;
     }
 
     @include onSmallerTablet {
-      left: 610px;
-      top: 1077px;
+      left: 532px;
+      top: 835px;
     }
 
     @include onMobile {
-      top: 810px;
-      left: 375px;
+      top: 562px;
+      left: 295px;
     }
   }
 
@@ -108,9 +118,6 @@
       color: transparent;
       background-repeat: no-repeat;
       background-size: cover;
-      -webkit-background-clip: text;
-      -moz-background-clip: text;
-      background-clip: text;
       overflow: visible;
 
       @include onSmallerTablet {

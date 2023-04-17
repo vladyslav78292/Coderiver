@@ -1,14 +1,14 @@
 {
   "compilerOptions": {
     "jsx": "react",
-    "target": "es5", // Целевая версия ECMAScript
-    "module": "commonjs", // Стиль модуля (ESM, CommonJS, UMD, SystemJS, AMD)
-    "lib": ["es6", "dom"], // Дополнительные библиотеки, которые должны быть доступны во время компиляции
-    "sourceMap": true, // Создать source map для отладки
-    "outDir": "dist", // Путь к директории, где компилятор TypeScript должен разместить скомпилированные файлы
-    "strict": true, // Строгий режим TypeScript
-    "esModuleInterop": true, // Включить интероперабельность между модулями CommonJS и модулями ES2015+
-    "resolveJsonModule": true, // Поддержка импорта JSON как модулей
+    "target": "es5",
+    "module": "commonjs",
+    "lib": ["es6", "dom"],
+    "sourceMap": true,
+    "outDir": "dist",
+    "strict": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
     "allowImportingTsExtensions": true,
     "noEmit": true,
     
@@ -19,5 +19,5 @@
     }
   },
   "include": ["./src"],
-  "exclude": ["node_modules"] // Пути, которые следует исключить из компиляции
+  "exclude": ["node_modules"]
 }
