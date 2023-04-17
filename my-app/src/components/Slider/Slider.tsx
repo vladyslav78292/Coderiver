@@ -1,5 +1,17 @@
 import React, { useState } from 'react'
 import './Slider.scss';
+import woman from '../../images/woman.png';
+import legs from  '../../images/legs.png';
+import shoes from  '../../images/shoes.png';
+import nature from '../../images/nature.png';
+import hoodie from  '../../images/hoodie.png';
+import arrowLeft from '../../images/arrow_left.svg';
+import arrowRight from  '../../images/arrow_right.svg';
+import text_mask_legs from '../../images/text-mask-legs.svg';
+import text_mask_woman from '../../images/text-mask-woman.svg';
+import text_mask_hoodie from '../../images/text-mask-hoodie.svg';
+import text_mask_nature from '../../images/text-mask-nature.svg';
+import text_mask_shoes from '../../images/text-mask-shoes.svg';
 
 type Props = {
   setImage: (image: string) => void,
@@ -9,15 +21,25 @@ type Props = {
 export const Slider: React.FC<Props> = ({ setImage, setIsImageClicked }) => {  
   const [position, setPosition] = useState(0);
   const [timerId, setTimerId] = useState(0);
+  
 
-  const woman = '../../images/woman.png';
-  const legs = '../../images/legs.png';
-  const shoes = '../../images/shoes.png';
-  const nature = '../../images/nature.png';
-  const hoodie = '../../images/hoodie.png';
-  const arrowLeft = '../../images/arrow_left.svg';
-  const arrowRight = '../../images/arrow_right.svg';
-  const images = [legs, hoodie, nature, woman, shoes];
+  const images = [
+    {
+      image: legs,
+      text_mask: text_mask_legs,
+    }, {
+      image: hoodie,
+      text_mask: text_mask_hoodie,
+    }, {
+      image: nature,
+      text_mask: text_mask_nature,
+    }, {
+      image: woman,
+      text_mask: text_mask_woman,
+    }, {
+      image: shoes,
+      text_mask: text_mask_shoes,
+    }];
 
   const moveCard = 300 * position;
 
@@ -43,7 +65,7 @@ export const Slider: React.FC<Props> = ({ setImage, setIsImageClicked }) => {
         <h2 className='slider_title'>Choose looks</h2>
         <div className='slider_buttons'>
           <button
-            className='slider_button slider_button1'
+            className='slider_button slider_button_right'
             onClick={() => {
               setPosition((position) => position - 1)
             }}
@@ -52,7 +74,7 @@ export const Slider: React.FC<Props> = ({ setImage, setIsImageClicked }) => {
             <img src={arrowRight} alt="previous button" className='slider_arrow' />
           </button>
           <button
-            className='slider_button slider_button2'
+            className='slider_button slider_button_left'
             onClick={() => {
               setPosition((position) => position + 1)
             }}
@@ -63,17 +85,17 @@ export const Slider: React.FC<Props> = ({ setImage, setIsImageClicked }) => {
         </div>
       </div>
       <div className='slider_cards'>
-        {images.map((image) => (
+        {images.map((picture) => (
           <button 
             style={{ transform: `translateX(${moveCard}px)` }} 
-            key={image}
+            key={picture.image}
             className='slider_card'
             onClick={() => {
-              handleClick(image)
+              handleClick(picture.text_mask)
               setIsImageClicked(true)
             }}
           >
-            <img src={image} className='slider_card_img'/>
+            <img src={picture.image} className='slider_card_img'/>
           </button>
         ))}
       </div>

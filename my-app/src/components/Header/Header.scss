@@ -9,6 +9,20 @@
     align-items: center;
   }
 
+  &_burger {
+    border: none;
+    background-color: transparent;
+    text-align: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+
+    &_image {
+      height: 32px;
+      width: 32px;
+    }
+  }
+
   &_list {
     display: flex;
     list-style-type: none;
