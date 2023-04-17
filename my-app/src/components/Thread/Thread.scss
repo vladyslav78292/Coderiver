@@ -10,12 +10,24 @@
     margin-right: auto;
     position: absolute;
     z-index: 1;
+
+    @include onSmallerTablet {
+      top: 230px;
+    }
   }
   &_params {
     width: 1350px;
 
     @include onTablet {
-      width: 1046px;
+      width: 1024px;
+    }
+
+    @include onSmallerTablet {
+      width: 720px;
+    }
+
+    @include onMobile {
+      width: 470px;
     }
   }
 };

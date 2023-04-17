@@ -12,8 +12,15 @@
     padding-bottom: 159px;
 
     @include onTablet {
-      // transform: translateX(0);
-      width: 1046px;
+      width: 1024px;
+    }
+
+    @include onSmallerTablet {
+      width: 720px;
+    }
+
+    @include onMobile {
+      width: 470px;
     }
   }
 }
@@ -25,5 +32,17 @@
 
   @include onTablet {
     width: 868px;
+  }
+
+  @include onSmallerTablet {
+    width: 568px;
+  }
+
+  @include onSmallerTablet {
+    width: 568px;
+  }
+
+  @include onMobile {
+    width: 268px;
   }
 }

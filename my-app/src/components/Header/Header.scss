@@ -1,4 +1,5 @@
 @import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
 
 .header {
   &_container {
@@ -7,6 +8,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include onTablet {
+      margin: 0 91px 61px;
+      padding-top: 61px;
+    }
+
+    // @include onSmallerTablet {
+
+    // }
   }
 
   &_burger {

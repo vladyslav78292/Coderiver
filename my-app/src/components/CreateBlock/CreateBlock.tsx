@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './CreateBlock.scss';
 import appAvailible from '../../images/appAvailible.svg';
+import anime from 'animejs';
 
 type Props = {
   image: string,
@@ -8,6 +9,24 @@ type Props = {
 };
 
 export const CreateBlock:React.FC<Props> = ({ image, isImageClicked }) => {
+
+
+  useEffect (() => {
+    const selectedImage = document.getElementById('textmask') as HTMLImageElement;
+
+    if (selectedImage) {
+      const imageHeight = selectedImage.clientHeight;
+      selectedImage.style.clipPath = `inset(${imageHeight}px 0px 0px 0px)`
+    }
+
+    anime({
+      targets: selectedImage,
+      clipPath: `inset(0px 0px 0px 0px)`,
+      easing: `easeOutQuad`,
+      duration: 3000,
+    });
+  }, []);
+
   return (
     <>
       <div className="create_container">
@@ -25,14 +44,18 @@ export const CreateBlock:React.FC<Props> = ({ image, isImageClicked }) => {
           <div
             className='create_text_container create_text_container_open'
           >
-            <img src={image} className='create_text'/>
+            <img id='textmask' src={image} className='create_text'/>
           </div>
         )}
 
       </div>
       <div className='create_star create_title'>*</div>
       <div className='app_availible'>
-        <img src={appAvailible} alt="App availible icon" />
+        <img
+          src={appAvailible}
+          alt="App availible icon"
+          className='availible_icon'
+        />
       </div>
     </>
   )
