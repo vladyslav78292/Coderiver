@@ -1,4 +1,5 @@
 @import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
 
 .line {
   &_container {
@@ -12,5 +13,9 @@
   }
   &_params {
     width: 1350px;
+
+    @include onTablet {
+      width: 1046px;
+    }
   }
 };

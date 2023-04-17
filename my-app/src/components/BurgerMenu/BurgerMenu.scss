@@ -1,0 +1,12 @@
+.burger {
+  &_list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &_element {
+      font-size: 48px;      
+    }
+  }
+}

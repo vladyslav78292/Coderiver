@@ -67,23 +67,11 @@
         transition: transform $transition-duration ease;
       }
     }
-
-    &_part1 {
-      font-size: 323px;
-      text-align: center;
-      line-height: 290px;
-    }
-
-    &_part2 {
-      text-align: center;
-      font-size: 330px;
-      line-height: 135px;
-    }
-
-    &_part3 {
-      text-align: center;
-      font-size: 375px;
-      line-height: 320px;
-    }
   }
+}
+
+.app_availible {
+  position: absolute;
+  left: 91px;
+  top: 185px;
 }

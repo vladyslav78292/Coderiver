@@ -1,5 +1,6 @@
 import React from 'react';
 import './CreateBlock.scss';
+import appAvailible from '../../images/appAvailible.svg';
 
 type Props = {
   image: string,
@@ -16,27 +17,23 @@ export const CreateBlock:React.FC<Props> = ({ image, isImageClicked }) => {
         {isImageClicked ? (
           <div
           className='create_text_container create_text_container_clicked'
-          style={{backgroundImage: `url(${image})` }}
-          id='text-mask'
         >
-          <p className='create_text create_text_part1'>CR</p>
-          <p className='create_text create_text_part2'>EA</p>
-          <p className='create_text create_text_part3'>TE</p>
+          <img src={image} className='create_text'/>
+
         </div>
         ) : (
           <div
             className='create_text_container create_text_container_open'
-            style={{backgroundImage: `url(${image})` }}
-            id='text-mask'
           >
-            <p className='create_text create_text_part1'>CR</p>
-            <p className='create_text create_text_part2'>EA</p>
-            <p className='create_text create_text_part3'>TE</p>
+            <img src={image} className='create_text'/>
           </div>
         )}
 
       </div>
       <div className='create_star create_title'>*</div>
+      <div className='app_availible'>
+        <img src={appAvailible} alt="App availible icon" />
+      </div>
     </>
   )
 }
