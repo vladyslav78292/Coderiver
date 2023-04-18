@@ -99,7 +99,7 @@ export const Slider: React.FC<Props> = ({ setImage, setIsImageClicked }) => {
             }}
             disabled={disableRightDesktop || disableRightTablet || disableRightSmallTablet || disableRightMobile}
           >
-            <img src={arrowRight} alt="previous button" className='slider_arrow' />
+            <img src={arrowRight} alt="previous button" className='slider_image' />
           </button>
           <button
             className='slider_button slider_button_left'

@@ -146,6 +146,10 @@
   @include onTablet {
     top: 135px;
   }
+
+  @include onMobile {
+    left: 20px;
+  }
 }
 
 .availible_icon {
