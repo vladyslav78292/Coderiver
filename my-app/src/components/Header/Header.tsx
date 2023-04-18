@@ -14,7 +14,6 @@ type Props = {
 
 export const Header: React.FC<Props> = ({ setIsBurgerMenuOpen, isBurgerMenuOpen }) => {
   const windowWidth = useWindowSize().width;
-  console.log(useWindowSize().width);
 
   return (
     <div className='header_container'>
@@ -64,7 +63,7 @@ export const Header: React.FC<Props> = ({ setIsBurgerMenuOpen, isBurgerMenuOpen 
               src={!isBurgerMenuOpen ? burgerMenu : closedBurgerMenu}
               alt="burgerMenu"
               className="header_burger_image"
-              onClick={() => setIsBurgerMenuOpen(!isBurgerMenuOpen)}
+              onClick={() => {setIsBurgerMenuOpen(!isBurgerMenuOpen)}}
             />
           </button>
         </div>

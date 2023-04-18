@@ -5,12 +5,12 @@ import { Header } from '../../components/Header/Header.tsx';
 import { CreateBlock } from '../../components/CreateBlock/CreateBlock.tsx';
 import { Slider } from '../../components/Slider/Slider.tsx';
 import { AboutSection } from '../../components/AboutSection/AboutSection.tsx';
-import text_mask_woman from '../../images/text-mask-woman.svg';
+import woman from '../../images/woman.png';
 import { useWindowSize } from '../../utils/helper.ts';
 import { BurgerMenu } from '../../components/BurgerMenu/BurgerMenu.tsx';
 
 export const MainPage = () => {
-  const [image, setImage] = useState(text_mask_woman);
+  const [image, setImage] = useState(woman);
   const [isBurgerMenuOpen, setIsBurgerMenuOpen] = useState(false);
   const[isImageClicked, setIsImageClicked] = useState(false);
   const windowWidth = useWindowSize().width;
