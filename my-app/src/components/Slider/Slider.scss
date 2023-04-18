@@ -10,7 +10,7 @@
     font-size: 60px;
     line-height: 70px;
     padding-top: 76px;
-    margin: 76px 0;
+    margin: 76px 0 0;
     text-transform: uppercase;
 
     &_container {
@@ -67,7 +67,7 @@
     &:hover {
       padding: 3px;
       border-radius: 20px;
-      background-color: $color-mediumseagreen;
+      background-color: $color-darkgray;
       z-index: 100;
     }
   }

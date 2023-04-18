@@ -1,17 +1,12 @@
 import React, { useState } from 'react'
 import './Slider.scss';
 import woman from '../../images/woman.png';
-import legs from  '../../images/legs.png';
-import shoes from  '../../images/shoes.png';
-import nature from '../../images/nature.png';
-import hoodie from  '../../images/hoodie.png';
+import legs from  '../../images/legs.svg';
+import shoes from  '../../images/shoes.svg';
+import nature from '../../images/nature.svg';
+import hoodie from  '../../images/hoodie.svg';
 import arrowLeft from '../../images/arrow_left.svg';
 import arrowRight from  '../../images/arrow_right.svg';
-import text_mask_legs from '../../images/text-mask-legs.svg';
-import text_mask_woman from '../../images/text-mask-woman.svg';
-import text_mask_hoodie from '../../images/text-mask-hoodie.svg';
-import text_mask_nature from '../../images/text-mask-nature.svg';
-import text_mask_shoes from '../../images/text-mask-shoes.svg';
 import { useWindowSize } from '../../utils/helper';
 
 type Props = {
@@ -19,46 +14,25 @@ type Props = {
   setIsImageClicked: (type: boolean) => void,
 };
 
-type ImagesObject = {
-  image: string,
-  text_mask: string,
-};
-
 export const Slider: React.FC<Props> = ({ setImage, setIsImageClicked }) => {  
   const [position, setPosition] = useState(0);
   const windowWidth = useWindowSize().width;
   const [timerId, setTimerId] = useState(0);
   
-  let images: ImagesObject[] = [];
-  const initialImages = [
-    {
-      // the first element of the object for the slider, the second for the text-mask
-      image: legs,
-      text_mask: text_mask_legs,
-    }, {
-      image: hoodie,
-      text_mask: text_mask_hoodie,
-    }, {
-      image: nature,
-      text_mask: text_mask_nature,
-    }, {
-      image: woman,
-      text_mask: text_mask_woman,
-    }, {
-      image: shoes,
-      text_mask: text_mask_shoes,
-    }];
+  let images: string[] = [];
+  const initialImages = [legs, hoodie, nature, woman, shoes]
 
 // if the width of the window is less than 720, then the last time you click on the button to the right in the slider, there may be some empty space. 
 // It would be a good idea to replace this empty place with the first picture, and make a button disable.
 
   if (windowWidth < 720) {
-    images = [...initialImages, { image: legs, text_mask: text_mask_legs }];
+    images = [...initialImages, legs];
   } else {
     images = [...initialImages];
   }
 // 300 because 268px width of image + 32px gap
-  const moveCard = 300 * position;
+  const cardWidth = 300;
+  const moveCard = cardWidth * position;
 
 // when user click on the picture, first 0.5 seconds there is an animation, then the picture changes. so the delay is 0.5 seconds
 
@@ -115,14 +89,14 @@ export const Slider: React.FC<Props> = ({ setImage, setIsImageClicked }) => {
         {images.map((picture) => (
           <button 
             style={{ transform: `translateX(${moveCard}px)`}} 
-            key={picture.image}
+            key={picture}
             className='slider_card'
             onClick={() => {
-              handleClick(picture.text_mask)
+              handleClick(picture)
               setIsImageClicked(true)
             }}
           >
-            <img src={picture.image} className='slider_card_img'/>
+            <img src={picture} className='slider_card_img'/>
           </button>
         ))}
       </div>

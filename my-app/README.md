@@ -1,6 +1,7 @@
 # Coderiver
 
 This is a web page created as a test task.
+[Demo Link](https://vladyslav78292.github.io/Coderiver)
 
 ## Technologies
 

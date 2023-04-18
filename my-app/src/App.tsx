@@ -3,7 +3,6 @@ import React from 'react';
 import { MainPage } from './pages/MainPage/MainPage';
 import { Navigate, Route, Routes } from 'react-router';
 import { UnderConstruction } from './pages/UnderConstruction';
-import { NotFound } from './pages/NotFound/NotFound';
 
 // additionally made the page a stub for links in the header and the page was not found
 
@@ -18,7 +17,6 @@ const App = () => (
       <Route path='/bags' element={ <UnderConstruction />} />
       <Route path='/accessorize' element={ <UnderConstruction />} />
       <Route path='/cart' element={ <UnderConstruction />} />
-      <Route path='*' element={<NotFound />} />
     </Routes>
   </div>
 )
