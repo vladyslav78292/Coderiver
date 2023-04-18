@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Coderiver/static/css/main.67dd4393.css",
-    "main.js": "/Coderiver/static/js/main.78f14711.js",
+    "main.css": "/Coderiver/static/css/main.d1ead4f0.css",
+    "main.js": "/Coderiver/static/js/main.2c1f648d.js",
     "static/js/787.4a2fcde6.chunk.js": "/Coderiver/static/js/787.4a2fcde6.chunk.js",
     "static/media/text-mask-hoodie.svg": "/Coderiver/static/media/text-mask-hoodie.ea1a9144dd74127aa86263e416a25bd4.svg",
     "static/media/text-mask-legs.svg": "/Coderiver/static/media/text-mask-legs.7fa80fa3516151cf665afb86432b94b0.svg",
@@ -23,12 +23,12 @@
     "static/media/burgerMenu.svg": "/Coderiver/static/media/burgerMenu.3f3c3f2fcc2d0b60dfa752fd3c1cab9c.svg",
     "static/media/arrow_right.svg": "/Coderiver/static/media/arrow_right.0998e6b0ab2905670d14a131b2f7831d.svg",
     "static/media/arrow_left.svg": "/Coderiver/static/media/arrow_left.2e4a792ff38943f109c08e00baafb948.svg",
-    "main.67dd4393.css.map": "/Coderiver/static/css/main.67dd4393.css.map",
-    "main.78f14711.js.map": "/Coderiver/static/js/main.78f14711.js.map",
+    "main.d1ead4f0.css.map": "/Coderiver/static/css/main.d1ead4f0.css.map",
+    "main.2c1f648d.js.map": "/Coderiver/static/js/main.2c1f648d.js.map",
     "787.4a2fcde6.chunk.js.map": "/Coderiver/static/js/787.4a2fcde6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.67dd4393.css",
-    "static/js/main.78f14711.js"
+    "static/css/main.d1ead4f0.css",
+    "static/js/main.2c1f648d.js"
   ]
 }
