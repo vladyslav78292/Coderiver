@@ -1,20 +1,14 @@
 {
   "files": {
-    "main.css": "/Coderiver/static/css/main.d1ead4f0.css",
-    "main.js": "/Coderiver/static/js/main.2c1f648d.js",
+    "main.css": "/Coderiver/static/css/main.841653df.css",
+    "main.js": "/Coderiver/static/js/main.480a4063.js",
     "static/js/787.4a2fcde6.chunk.js": "/Coderiver/static/js/787.4a2fcde6.chunk.js",
-    "static/media/text-mask-hoodie.svg": "/Coderiver/static/media/text-mask-hoodie.ea1a9144dd74127aa86263e416a25bd4.svg",
-    "static/media/text-mask-legs.svg": "/Coderiver/static/media/text-mask-legs.7fa80fa3516151cf665afb86432b94b0.svg",
-    "static/media/text-mask-shoes.svg": "/Coderiver/static/media/text-mask-shoes.753eff20d9c05e5cec57ecd77b932dd6.svg",
-    "static/media/text-mask-nature.svg": "/Coderiver/static/media/text-mask-nature.450f3656c87b6d5fc919d76224f6dbd8.svg",
-    "static/media/text-mask-woman.svg": "/Coderiver/static/media/text-mask-woman.27a31b3497f96dc01492383bef645520.svg",
+    "static/media/hoodie.svg": "/Coderiver/static/media/hoodie.fdb85ec8529bd02b620761419a649cc4.svg",
+    "static/media/legs.svg": "/Coderiver/static/media/legs.62c6593cab9561c518b88793ac5a22d1.svg",
+    "static/media/shoes.svg": "/Coderiver/static/media/shoes.25488c1eca4586f8849c2aff05dd4200.svg",
+    "static/media/nature.svg": "/Coderiver/static/media/nature.1c08bed707bb4df87cbd639d21e744b1.svg",
     "static/media/underConstruction.png": "/Coderiver/static/media/underConstruction.de19460831b40f9ec3cb.png",
     "static/media/woman.png": "/Coderiver/static/media/woman.b15f3db9665359953b31.png",
-    "static/media/nature.png": "/Coderiver/static/media/nature.707c35c370fd99921e7f.png",
-    "static/media/hoodie.png": "/Coderiver/static/media/hoodie.b3c1bc8b21c45019cac7.png",
-    "static/media/legs.png": "/Coderiver/static/media/legs.829753d7b784ab982b6d.png",
-    "static/media/shoes.png": "/Coderiver/static/media/shoes.9c0ebd9cc233f0a8af01.png",
-    "static/media/notFound.png": "/Coderiver/static/media/notFound.3c6908273b57f4cb6dac.png",
     "static/media/FREEFATFONT-Regular.ttf": "/Coderiver/static/media/FREEFATFONT-Regular.05883bd1ba97fdca66bc.ttf",
     "static/media/appAvailible.svg": "/Coderiver/static/media/appAvailible.d7d504a0ea753fdddf00750bd8d2a16c.svg",
     "static/media/LANDING.svg": "/Coderiver/static/media/LANDING.1fa673e72e452ed30ef6a7f4538ffbd5.svg",
@@ -23,12 +17,12 @@
     "static/media/burgerMenu.svg": "/Coderiver/static/media/burgerMenu.3f3c3f2fcc2d0b60dfa752fd3c1cab9c.svg",
     "static/media/arrow_right.svg": "/Coderiver/static/media/arrow_right.0998e6b0ab2905670d14a131b2f7831d.svg",
     "static/media/arrow_left.svg": "/Coderiver/static/media/arrow_left.2e4a792ff38943f109c08e00baafb948.svg",
-    "main.d1ead4f0.css.map": "/Coderiver/static/css/main.d1ead4f0.css.map",
-    "main.2c1f648d.js.map": "/Coderiver/static/js/main.2c1f648d.js.map",
+    "main.841653df.css.map": "/Coderiver/static/css/main.841653df.css.map",
+    "main.480a4063.js.map": "/Coderiver/static/js/main.480a4063.js.map",
     "787.4a2fcde6.chunk.js.map": "/Coderiver/static/js/787.4a2fcde6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d1ead4f0.css",
-    "static/js/main.2c1f648d.js"
+    "static/css/main.841653df.css",
+    "static/js/main.480a4063.js"
   ]
 }
