@@ -11,15 +11,15 @@ JavScript\
 TypeScript\
 React\
 JS library - Animejs\
-React router\
+React router
 
 
 ### Installing
 
 Fork and clone this repository\
 Run `npm install` in your terminal\
-Run `npm start` in your terminal\
+Run `npm start` in your terminal
 
 ## Deployment
 #`npm run build`\
-Builds the app for production\
+Builds the app for production
